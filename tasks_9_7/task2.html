@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let op=prompt("Enter the Operation...");
+        let number1=prompt("Enter First Number");
+        let number2=prompt("Enter Second Number");
+        let operationResult;
+        let result;
+        if(op=="+")
+        {
+            result=+number1 + +number2;
+            console.log(+number1 + " + " + +number2 + " = " + result);
+            operationResult=`<div>${number1} ${op} ${number2} = ${result}`;
+            document.write(operationResult);
+        }
+        else if(op=="-")
+        {
+            result=+number1 - +number2;
+            console.log(+number1 + " - " + +number2 + " = " + result);
+            operationResult=`<div>${number1} ${op} ${number2} = ${result}`;
+            document.write(operationResult);
+        }
+        else if(op=="*")
+        {
+            result=+number1 * +number2;
+            console.log(+number1 + " * " + +number2 + " = " + result);
+            operationResult=`<div>${number1} ${op} ${number2} = ${result}`;
+            document.write(operationResult);
+        }
+        else 
+        {
+            result=+number1 / +number2;
+            console.log(+number1 + " / " + +number2 + " = " + result);
+            operationResult=`<div>${number1} ${op} ${number2} = ${result}`;
+            document.write(operationResult);
+        }
+    </script>
+</body>
+</html>
