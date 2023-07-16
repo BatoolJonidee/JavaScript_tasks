@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called powerElementIndex
+        //that accept an array of number
+        //and return a new array that have the elemnt power by the index of it self
+
+        //var nums= [44, 5, 4, 3, 2, 10]
+        //Ex: powerElementIndex(nums) => [1, 5, 16, 27, 16, 100000]
+
+        function powerElementIndex(array){
+            let newArray=new Array();
+            for(let i=0;i<array.length;i++){
+                newArray.push(array[i]**i);
+            }
+            return newArray;
+        }
+        function powerElementIndex2(array){
+            let newArray=new Array();
+            let i=0;
+            while(i<array.length){
+                newArray.push(array[i]**i);
+                i++;
+            }
+            return newArray;
+        }
+        var nums= [44, 5, 4, 3, 2, 10];
+        console.log(powerElementIndex(nums));
+        console.log(powerElementIndex2(nums));
+
+    </script>
+</body>
+</html>

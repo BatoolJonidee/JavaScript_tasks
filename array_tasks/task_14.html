@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called minInArray
+        //that accept an array
+        //and return the minimum value inside this array
+
+        //var nums= [1,2,3,8,9]
+        //Ex: minInArray(nums) => 1
+
+        function minInArray(array){
+            let min=array[0];
+            for(let i=1;i<array.length;i++)
+            {
+                if(min>array[i]){
+                    min=array[i];
+                }
+            }
+            return min;
+        }
+        function minInArray2(array){
+            let min=array[0];
+            let i=0;
+            while(i<array.length){
+                if(min>array[i]){
+                    min=array[i];
+                }
+                i++;
+            }
+            return min;
+        }
+        var nums=[1,2,3,8,9];
+        console.log(`the minimum number in the array ${nums} is :  ${minInArray(nums)}`);
+        console.log(`the minimum number in the array ${nums} is :  ${minInArray2(nums)}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called addToEnd
+        //that accept an array and value
+        //and return the entire array with add this value to the end of this array
+
+        //var nums= [1,2,3,8,9]
+        //Ex: addToEnd(nums,55) =>  [1,2,3,8,55]
+
+        function addToEnd(array,value){
+            array.pop();
+            console.log("array after remove the last element : ",array );
+            array.push(value);
+            return array;
+        }
+        var array=[1,2,3,8,9];
+        console.log(array);
+        console.log("array after add the element in the last : " ,addToEnd(array,55));
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called middleOfArray
+        //that take an array as a parameter
+        //and return the middle element in an array if it is have an odd elemnets
+        //and return the two middle elemnt in an array if it is have an even elemnets
+
+        //Ex: middleOfArray([1,4,5]) => 4
+        //Ex: middleOfArray(["t","u","g","x"]) =>"u and g"
+
+        function middleOfArray(arr) {
+            console.log(arr);
+            if(arr.length %2===0){
+                console.log(arr[arr.length/2 -1]) ;
+                console.log(arr[arr.length/2 ])
+            }else{
+                console.log(arr[arr.length/2 -.5]);
+            }
+        }
+        middleOfArray([1,2,3,4,5]);
+    </script>
+</body>
+</html>

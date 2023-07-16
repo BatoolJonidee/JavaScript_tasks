@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called shorterInArray
+        //that accept an array of strings
+        //and return the shortest string inside this array (first)
+
+        //var strings= ["alex","mercer","madrasa","rashed2","emad","hala"]
+        //Ex: shorterInArray(strings) => "alex"
+        
+        function shorterInArray(array){
+            let short=array[0];
+            for(let i=1;i<array.length;i++){
+                if(short.length > array[i].length){
+                    short=array[i];
+                }
+            }
+            return short;
+        }
+        function shorterInArray2(array){
+            let short=array[0];
+            let i=0;
+            while(i<array.length){
+                if(short.length > array[i].length){
+                    short=array[i];
+                }
+                i++;
+            }
+            return short;
+        }
+        var strings= ["alex","mercer","madrasa","rashed2","emad","hala"];
+        console.log("the array of string is :  ",strings);
+        console.log("the shorter string in array using shorterInArray is : ",shorterInArray(strings));
+        var strings= ["alex","mercer","madrasa","rashed2","emad","hala"];
+        console.log("the array of string is :  ",strings);
+        console.log("the shorter string in array using shorterInArray2 is : ",shorterInArray2(strings));
+    </script>
+</body>
+</html>

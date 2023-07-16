@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called removeFromArray
+        //that accept an array and elemnt to remove
+        //and return the array after remove this elemnt from it
+
+        //var nums= [1,2,3,8,9]
+        //Ex: minInArray(nums,8) => [1,2,3,9]
+
+        function removeFromArray(array,num){
+            for(let i=0;i<array.length;i++){
+                if(array[i]===num)
+                {
+                    array.splice(i,1);
+                }
+            }
+            return array;
+        }
+        function removeFromArray2(array,num){
+            let i=0;
+            while(i<array.length){
+                if(array[i]===num)
+                {
+                    array.splice(i,1);
+                }
+                i++;
+            }
+            return array;
+        }
+        var nums=[1,2,3,8,9];
+        console.log("before call the first function(using for loop)  :  ",nums);
+        console.log(removeFromArray(nums,8));
+        console.log("before call the second function(using while loop)  :  ",nums);
+        console.log(removeFromArray2(nums,9));
+    </script>
+</body>
+</html>

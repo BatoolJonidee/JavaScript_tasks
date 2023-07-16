@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called repeatChar
+        //that accept a string and char
+        //and return the times that this char repeat inside this string
+
+        //var string= "alex mercer madrasa rashed2 emad hala"
+        //Ex: repeatChar(string,"a") => 8
+        //Ex: repeatChar(string,"z") => 0
+        
+        function repeatChar(str,char) {
+            let count=0;
+            for(let i=0;i<str.length;i++){
+                if(str[i]===char)
+                {
+                    count+=1;
+                }
+            }
+            return count;
+        }
+        function repeatChar2(str,char) {
+            let count=0;
+            let i=0;
+            while(i<str.length){
+                if(str[i]===char){
+                    count+=1;
+                }
+                i++;
+            }
+            return count;
+        }
+        var strings= "alex mercer madrasa rashed2 emad hala";
+        var char1='a';
+        var char2='z';
+        console.log("the string is : " ,strings);
+        console.log(`char ${char1} repeated in this string ${repeatChar(strings,char1)} times.. using function repeatChar`);
+        console.log(`char ${char2} repeated in this string ${repeatChar(strings,char2)} times.. using function repeatChar`);
+        console.log(`char ${char1} repeated in this string ${repeatChar2(strings,char1)} times.. using function repeatChar2`);
+        console.log(`char ${char2} repeated in this string ${repeatChar2(strings,char2)} times.. using function repeatChar2`);
+    </script>
+</body>
+</html>

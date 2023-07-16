@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called aveArray
+        //that accept an array
+        //and return the average of the numbers inside this array
+
+        //var nums= [1,2,3,8,9]
+        //Ex: aveArray(nums) => 4.6
+
+        //var nums2= [1,2,3,8,9,77]
+        //Ex: aveArray(nums) => 16.6
+
+        function aveArray(array){
+            sum=0;
+            for(let i=0;i<array.length;i++){
+                sum+=array[i];
+            }
+            return sum/array.length;
+        }
+        function aveArray2(array){
+            let sum=0;
+            let i=0;
+            while(i<array.length){
+                sum+=array[i];
+                i++;
+            }
+            return (sum/array.length).toFixed(1);
+        }
+        var nums= [1,2,3,8,9];
+        console.log("the array we want to calc. the avg using aveArray function : ",nums);
+        console.log("the average is : ",aveArray(nums));
+        var nums2= [1,2,3,8,9,77];
+        console.log("the array we want to calc. the avg using aveArray2 function : ",nums2);
+        console.log("the average is : ",aveArray2(nums2));
+
+    </script>
+</body>
+</html>

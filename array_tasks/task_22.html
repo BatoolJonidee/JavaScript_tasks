@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called evenNumberEvenIndex
+        //that accept an array of nums
+        //and return a new array that have the even number in even index
+
+        //var nums= [5,2,2,1,8,66,55,77,34,9,55,1]
+        //Ex: evenNumberEvenIndex(nums) => [2,8,34]
+
+        function evenNumberEvenIndex (array){
+            let newArray=new Array();
+            for(let i=0;i<array.length;i++){
+                if(i%2===0){
+                    if(array[i]%2===0){
+                        newArray.push(array[i]);
+                    }
+                }
+            }
+            return newArray;
+        }
+        function evenNumberEvenIndex2 (array){
+            let newArray=new Array();
+            let i=0;
+            while(i<array.length){
+                i++;
+                if(i%2===0){
+                    if(array[i]%2===0){
+                        newArray.push(array[i]);
+                    }
+                }
+            }
+            return newArray;
+        }
+        var nums= [5,2,2,1,8,66,55,77,34,9,55,1];
+        console.log(nums);
+        console.log(evenNumberEvenIndex(nums));
+        console.log(evenNumberEvenIndex2(nums));
+
+    </script>
+</body>
+</html>

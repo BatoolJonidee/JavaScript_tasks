@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called sumArray
+        //that accept an array
+        //and return the summation of all elemnt in this array
+
+        //var nums= [1,2,3,8,9]
+        //Ex: sumArray(nums) => 23
+
+        function sumArray(array){
+            let sum=0;
+            for(let i=0;i<array.length;i++){
+                sum+=array[i];
+            }
+            return sum;
+        }
+        function sumArray2(array){
+            let sum=0;
+            let i=0;
+            while (i<array.length){
+                sum+=array[i];
+                i++;
+            }
+            return sum;
+        }
+        var nums=[1,2,3,8,9];
+        console.log("The summation from sumArray is : " , sumArray(nums));
+        console.log("The summation from sumArray2 is : " , sumArray2(nums));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function called oddArray
+        //that accept an array
+        //and return an array have only the odd elemnts
+
+        //var nums= [1,2,3,8,9]
+        //Ex: oddArray(nums) => [1,3,9]
+
+        function oddArray(array){
+            for(let i=0;i<array.length;i++)
+            {
+                if(array[i]%2===0)
+                {
+                    array.splice(i,1);
+                }
+            }
+            return array;
+        }
+        function oddArray2(array){
+            let i=0;
+            while(i<array.length){
+                if(array[i]%2===0)
+                {
+                    array.splice(i,1);
+                }
+                i++;
+            }
+            return array;
+        }
+        var nums=[1,2,3,8,9];
+        console.log("array number 1 before call function oddArray : ",nums);
+        console.log("the result of calling function oddArray : ",oddArray(nums));
+        var nums2=[1,2,3,8,9];
+        console.log("array number 2 before call function oddArray2 : ",nums2);
+        console.log("the result of calling function oddArray2 : ",oddArray2(nums2));
+    </script>
+</body>
+</html>
