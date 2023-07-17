@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            * Exercise 2 :
+            * Take an array of numbers and make them strings
+            * Test Case: 
+            * console.log(stringItUp([2, 5, 100]));
+            * Result:
+            * ["2", "5", "100"]
+        */
+
+        function stringItUp(arr){
+            let newArray=arr.map(function(element){
+                return String(element);
+            });
+            console.log(newArray);
+            return newArray;
+        }
+        let array=[2,5,100];
+        console.log(`the array before [${array}], and the array after convert to array of strings : [${stringItUp(array)}]`);
+    </script>
+</body>
+</html>

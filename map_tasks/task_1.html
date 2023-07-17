@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            * Exercise 1: 
+            * Make an array of numbers that are doubles of the first array
+            * Test Case: 
+            * console.log(doubleNumbers([2, 5, 100]));
+            * Result:
+            * [4, 10, 200]
+        */
+
+        function doubleNumbers(arr){
+            let double=arr.map( (element)=> element*2);
+            return double;
+        }
+        let arr=[2,5,100];
+
+        console.log(` the double elements of an array [${arr}] is :  [${doubleNumbers(arr)}]`);
+    </script>
+</body>
+</html>
