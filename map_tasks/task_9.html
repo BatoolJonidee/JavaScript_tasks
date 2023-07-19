@@ -19,7 +19,7 @@
   
   
         function extractKey(arr, key){
-            let newArray=arr.map((element)=> element.key);
+            let newArray=arr.map((element)=> element[key]);
             console.log(newArray);
         }
         extractKey([{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}], "name") ;
